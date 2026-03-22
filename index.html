@@ -6,15 +6,21 @@
   <title>Lumière du Monde</title>
 
   <style>
-    body {.card {
-  background: #111;
+    body { .card {
+  background: linear-gradient(145deg, #111, #1a1a1a);
   padding: 20px;
-  border-radius: 10px;
-  width: 200px;
+  border-radius: 15px;
+  width: 220px;
   font-weight: bold;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
-  transition: 0.3s;
-}h1 {
+  transition: 0.4s;
+  border: 1px solid #FFD700;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  background: #FFD700;
+  color: black;
+}
   animation: fadeIn 2s ease-in-out;
 }h1 {
   color: #FFD700;
