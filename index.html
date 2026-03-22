@@ -1,22 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>Lumière du Monde</title>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumière du Monde</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d0d0d;
+    color: white;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #ffcc00, #ffaa00);
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin-top: 5px;
+}
+
+/* MENU */
+nav {
+    background: #111;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: #ffcc00;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('https://images.unsplash.com/photo-1581091870627-3e7e1d3e1c36') no-repeat center/cover;
+}
+
+.hero h2 {
+    font-size: 28px;
+}
+
+/* SERVICES */
+section {
+    padding: 30px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.service {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    background: #ffcc00;
+    color: black;
+}
+
+/* BOUTON */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #ffcc00;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    text-align: center;
+    padding: 15px;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+}
+</style>
+
 </head>
-<body style="font-family: Arial; text-align: center;">
+<body>
 
-    <h1>⚡ Lumière du Monde</h1>
-    <p>Entreprise d’électricité à Goma</p>
+<header>
+    <h1>LUMIÈRE DU MONDE ⚡</h1>
+    <p>Votre expert en électricité à Goma</p>
+</header>
 
+<nav>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+    <h2>Installation & Dépannage électrique professionnel</h2>
+    <a class="btn" href="#contact">Nous contacter</a>
+</div>
+
+<section id="services">
     <h2>Nos services</h2>
-    <p>Installation électrique (hôpital, hôtel, appartements)</p>
-    <p>Dépannage électrique</p>
-    <p>Conseils en électricité</p>
-    <p>Séparation de compteur</p>
 
+    <div class="services-container">
+        <div class="service">🏠 Installation maisons</div>
+        <div class="service">🏥 Hôpitaux & hôtels</div>
+        <div class="service">⚡ Dépannage rapide</div>
+        <div class="service">📊 Séparation compteur</div>
+        <div class="service">💡 Conseils professionnels</div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
     <h2>Contact</h2>
-    <p>Téléphone : +243990916670</p>
+    <p>📞 +243 990 916 670</p>
+    <p>📍 Goma</p>
+</section>
+
+<footer>
+    <p>© 2026 Lumière du Monde</p>
+</footer>
+
+<!-- WhatsApp bouton -->
+<a class="whatsapp" href="https://wa.me/243990916670" target="_blank">💬</a>
 
 </body>
 </html>
